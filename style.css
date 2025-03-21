@@ -1,0 +1,666 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    background-color: var(--bg);
+    color: #fff;
+}
+
+:root{
+    --font1: "Poppins", sans-serif;
+    --font2: "League Spartan", sans-serif;
+    --text1: #0000;
+    --text2: #193948;
+    --text3: #c1bbbb;
+    --opacity: #397e9f;
+    --black: #000000;
+    --blue: #4FADD0;
+    --green: rgb(0, 253, 0);
+    --bg: rgb(1, 56, 1);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    text-decoration: none;
+}
+
+ul li{
+   list-style: none; 
+}
+
+header .navigate .fa-bars{
+    display: none;
+}
+
+header .navigate .fa-close{
+    display: none;
+}
+
+ .menu-section{
+    display: none;
+}
+
+.first1{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+/* .second2{
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: rotate3d(360deg);
+}
+
+.list{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+} */
+
+
+header{
+    height: 80px;
+    width: 100%;
+    padding: 0 80px;
+    background-color: var(--green);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    color: var(--bg);
+}
+
+header nav ul{
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: var(--bg);
+}
+
+header nav ul li a:hover{
+    /* color: #fff; */
+    background-color: var(--bg);
+    color: #fff;
+    padding: 4px 13px;
+    border-radius: 5px;
+}
+
+header .connector{
+    display: flex;
+    gap: 20px;
+}
+
+header .connector a img{
+    width: 28px;
+    background: 450px #fff;
+    border-radius: 50%;
+    stroke: #fff;
+    stroke-width: 10px;
+}
+
+header .connector a .fa-message{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+#heading{
+    height: max-content;
+    width: 100%;
+    padding: 70px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-family: var(--font2);
+    text-align: center;
+    /* background-color: red; */
+}
+
+#heading h1{
+    font-size: 30px;
+    font-weight: 800px;
+    color: var(--green);
+}
+
+#heading h4{
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+#heading p{
+    font-weight: light;
+    margin-bottom: 15px;
+}
+
+#heading .connect-box{
+    display: flex;
+    gap: 20px;
+}
+
+#heading .connect-box a img{
+    width: 28px;
+    background: 450px #fff;
+    border-radius: 50%;
+    stroke: #fff;
+    stroke-width: 10px;
+}
+
+#heading .connect-box a .fa-message{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 5px;
+}
+
+#about-me{
+    margin-top: 30px;
+    padding: 50px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content;
+    width: 100%;
+    /* border-top: 1px solid var(--green); */
+    background-color: rgb(2, 69, 2);
+}
+
+
+#about-me .containerBox{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+#about-me .containerBox .page1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#about-me .containerBox .page1 .mail{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+#about-me .containerBox .page1 .location{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+#about-me .containerBox .page1 h3{
+    font-size: 22px;
+    color: var(--green);
+}
+
+#about-me .page2{
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    height: 100%;
+}
+
+#about-me .containerBox .page2 img{
+ width: 220px; 
+ /* background-color: #193948; */
+ box-shadow: 5px 5px 20px rgb(168, 168, 131);
+ padding: 10px; 
+ border-radius: 30px; 
+}
+
+#skills{
+    height: max-content;
+    width: 100%;
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(18, 81, 18);
+}
+
+#skills h2{
+    font-size: 28px;
+    color: var(--green);
+}
+
+#skills .sub{
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    line-height: 1.5rem;
+}
+
+#skills .stacks{
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills .stacks p{
+    font-size: 18px;
+    font-weight: 400;
+    padding: 8px 35px;
+    border-radius: 20px;
+    border: 1px solid var(--green);
+}
+
+#projects{
+    height: max-content;
+    width: 100%;
+    padding: 70px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+}
+
+#projects h2{
+    font-size: 28px;
+    color: var(--green);
+
+}
+
+#projects .container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 0 30px;
+}
+
+#projects .container .project{ 
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin: 30px 0;
+    height: 230px;
+    width: 100%;
+}
+
+/*---- project1 ------*/
+
+#projects .container .project1 .project1-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--green);
+    align-content: center;
+    text-align: center;
+    background: url(./IMAGES/abstract-blur-shopping-mall.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#projects .container .project1 .project1-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    text-align: start;
+
+}
+
+#projects .container .project1 .project1-content .project1-stacks{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#projects .container .project1 .project1-content .project1-stacks p{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 7px 28px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+#projects .container .project1 .project1-content .checks a button{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 22px;
+    border-radius: 10px;
+    background-color: var(--green);
+    border: none;
+    outline: none;
+}
+
+#projects .container .project1 .project1-content .checks a button:hover{
+    background: transparent;
+    border: 1px solid var(--green);
+    cursor: pointer;
+    color: #fff;
+}
+
+#projects .container .project1 .project1-content .checks a{
+    text-decoration: none;
+}
+
+/*---- project2 ------*/
+
+#projects .container .project2{
+    display: flex;
+    grid-template-columns: 2, 1fr;
+    flex-direction: row-reverse;
+}
+
+#projects .container .project2 .project2-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    align-content: center;
+    text-align: center;
+    background: url(./IMAGES/group-multinational-busy-people-working-office.jpg) var(--green);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#projects .container .project2 .project2-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    text-align: start;
+}
+
+#projects .container .project2 .project2-content .project2-stacks{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#projects .container .project2 .project2-content .project2-stacks p{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 7px 28px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+#projects .container .project2 .project2-content .checks a button{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 22px;
+    border-radius: 10px;
+    background-color: var(--green);
+    border: none;
+    outline: none;
+}
+
+#projects .container .project2 .project2-content .checks a button:hover{
+    background: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
+}
+
+#projects .container .project2 .project2-content .checks a{
+    text-decoration: none;
+}
+
+/*---- project3 ------*/
+
+#projects .container .project3 .project3-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    align-content: center;
+    text-align: center;
+    background: url(IMAGES/male-employee-getting-used-his-new-office-job-along-with-female-colleagues.jpg) var(--green);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#projects .container .project3 .project3-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    text-align: start;
+}
+
+#projects .container .project3 .project3-content .project3-stacks{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#projects .container .project3 .project3-content .project3-stacks p{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 7px 28px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+#projects .container .project3 .project3-content .checks a button{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 22px;
+    border-radius: 10px;
+    background-color: var(--green);
+    border: none;
+    outline: none;
+}
+
+#projects .container .project3 .project3-content .checks a button:hover{
+    background: transparent;
+    border: 1px solid #fff;
+    cursor: pointer;
+    color: #fff;
+}
+
+#projects .container .project3 .project3-content .checks a{
+    text-decoration: none;
+}
+
+/*---- project4 ------*/
+
+#projects .container .project4{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#projects .container .project4 .project4-img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    align-content: center;
+    text-align: center;
+    background: url(IMAGES/retro-microphone-isolated-color-background.jpg) var(--green);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#projects .container .project4 .project4-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    text-align: start;
+}
+
+#projects .container .project4 .project4-content .project4-stacks{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#projects .container .project4 .project4-content .project4-stacks p{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 7px 28px;
+    border-radius: 20px;
+    border: 1px solid #fff;
+}
+
+#projects .container .project4 .project4-content .checks a button{
+    font-size: 14px;
+    font-weight: 400;
+    padding: 10px 22px;
+    border-radius: 10px;
+    background-color: var(--green);
+    border: none;
+    outline: none;
+}
+
+#projects .container .project4 .project4-content .checks a button:hover{
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+}
+
+#projects .container .project4 .project4-content .checks a{
+    text-decoration: none;
+}
+
+/* #experience{
+    height: max-content;
+    width: 100%;
+    padding: 120px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+} */
+
+#connect{
+    height: max-content;
+    width: 100%;
+    padding: 80px 80px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid var(--green);
+}
+
+#connect .container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+#connect .container .pages h2{
+    font-size: 18px;
+    color: var(--green);
+}
+
+#connect .container .page1{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+
+#connect .container .page1 h3{
+    font-size: 14px;
+}
+
+#connect .container .page2{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    text-align: center;
+}
+
+#connect .container .page3{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: end;
+}
+
+#connect .container .page3 ul li a img{
+    width: 12px;
+    margin-right: 7px;
+    filter: brightness(0) invert(1);
+}
+
+#connect .container .page3 ul li a .whatsapp{
+    width: 16px;
+    margin-right: 7px;
+}
+
+#connect .container .pages .first{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+#connect .container .pages .first a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#connect .container .pages .first a:hover{
+    text-decoration: underline var(--green);
+}
+
+#connect .container .pages .second{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: end;
+}
+
+#connect .container .pages .second a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#connect .container .pages .second a:hover{
+    text-decoration: underline var(--green);
+}
+
+#copy{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid #fff;
+    padding: 30px 20px;
+}
+

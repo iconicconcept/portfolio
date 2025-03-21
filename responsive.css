@@ -1,0 +1,192 @@
+@media (max-width: 620px){
+.menu-section{
+    display: none;
+    height: max-content;
+    width: 80%;
+    padding: 50px 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--green);
+    position: absolute;
+    border-radius: 10px;
+    top: 100px;
+    right: 37px;
+    text-align: center;
+    transition: all 1s 1s;
+}
+
+.menu-section ul{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    
+}
+
+.menu-section ul li a{
+    font-size: 21px;
+    text-decoration: none;
+    color: var(--bg);
+
+}
+
+.menu-section ul li a:hover{
+    background-color: var(--bg);
+    color: #fff;
+    padding: 7px 23px;
+    border-radius: 5px;
+}
+
+    header{
+        padding: 20px 40px;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    header h1{
+        font-size: 20px;
+    }
+
+    header .connector{
+        display: none;
+    }
+
+    header .navigate .fa-bars{
+        display: flex;
+        font-size: 25px;
+        color: var(--bg);
+    }
+
+    header .navigate .fa-bars:hover{
+        cursor: pointer;
+    }
+
+    header .navigate .fa-close{
+        display: none;
+        font-size: 25px;
+        color: var(--bg);
+        position: absolute;
+        right: 42px;
+        top: 28px;
+    }
+
+    header .navigate .fa-close:hover{
+        cursor: pointer;
+    }
+
+    #about-me .containerBox{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    #about-me .containerBox .page1 .location{
+        justify-content: center;
+    }
+
+    #about-me .containerBox .page1 .mail{
+        justify-content: center;
+    }
+
+    #about-me .containerBox .page1{
+        text-align: center;
+    }
+
+    #skills{
+        padding: 60px 50px;
+    }
+
+    #projects{
+        padding: 40px 30px;
+    }
+
+    #projects .container{
+        gap: 80px;
+        padding: 0 0px ;
+    }
+
+    #projects .container .project{
+        height: 470px;
+        gap: 60px;
+        flex-direction: column;
+        margin: 0;
+        padding: 0 5px;
+
+    }
+
+    #projects .container .project{
+        gap: 12px;
+    }
+
+    #projects .container .project1 .project1-img,
+    #projects .container .project2  .project2-img,
+    #projects .container .project3  .project3-img,
+    #projects .container .project4  .project4-img{
+        height: 100%;
+        width: 100%;
+        align-self: center;
+    }
+
+    #projects .container .project1 .project1-content{
+        justify-content: start;
+        padding-top: 30px;
+        max-width: 100%;
+        align-self: center;
+    }
+
+    #projects .container .project2{
+        flex-direction: column;
+    }
+
+    #projects .container .project2 .project2-content{
+        justify-content: start;
+        padding-top: 30px;
+        max-width: 100%;
+        align-self: center;
+    }
+
+    #projects .container .project3{
+        flex-direction: column;
+    }
+
+    #projects .container .project3 .project3-content{
+        justify-content: start;
+        padding-top: 30px;
+        max-width: 90%;
+        align-self: center;
+    }
+
+    #projects .container .project p{
+        text-align: start;
+    }
+
+    #projects .container .project4{
+        flex-direction: column;
+    }
+
+    #projects .container .project4 .project4-content{
+        justify-content: start;
+        padding-top: 30px;
+        max-width: 100%;
+        align-self: center;
+    }
+
+    #connect .container{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    #connect .container .page1{
+        text-align: center;
+        align-items: center;
+    }
+
+    #connect .container .page3{
+        align-items: center;
+    }
+
+    #connect .container .pages .second{
+        text-align: center;
+    }
+}
